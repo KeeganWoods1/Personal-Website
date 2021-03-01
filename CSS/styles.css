@@ -68,7 +68,11 @@ p {
 
 .bottom-cloud {
     position: absolute;
+    animation-name: slide-right;
+    animation-duration: 200s;
+    animation-delay: 1.5s;
     left: 100px;
+    bottom: 300px
 }
 
 .btn {
@@ -144,6 +148,18 @@ p {
     float: right;
 }
 
+.mb-6 {
+    margin-bottom: 150px;
+}
+
+.mt-4 {
+    margin-top: 50px;
+}
+
+.pt-6 {
+    padding-top: 100px;
+}
+
 .middle-container {
     background-color: #17706e;
     position: relative;
@@ -151,7 +167,11 @@ p {
 }
 
 .mountain {
-    padding-top: 110px;
+    margin-top: auto;
+}
+
+.pb-5 {
+    padding-bottom: 55px;
 }
 
 .profile {
@@ -228,14 +248,17 @@ p {
 
 .top-cloud {
     position: absolute;
+    animation-name: slide-left;
+    animation-duration: 200s;
+    animation-delay: 1.5s;
     right: 125px;
-    top: 25px;
+    top: 45px;
 }
 
 .top-container {
     background-color: #0bada5;
-    min-height: 75vh;
-    max-height: auto;
+    min-height: 60vh;
+    max-height: 100vh;
     margin: 0;
     padding-top: 100px;
     position: relative;
@@ -358,6 +381,28 @@ p {
     }
     to {
         opacity: 1
+    }
+}
+
+@keyframes slide-left {
+    from {
+        visibility: hidden;
+        right: 125px;
+    }
+    to {
+        visibility: visible;
+        right: 1600px;
+    }
+}
+
+@keyframes slide-right {
+    from {
+        visibility: hidden;
+        left: 100px;
+    }
+    to {
+        visibility: visible;
+        left: 1600px;
     }
 }
 
